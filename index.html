@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Slice of Pi Pizza</h1>
+    <h2>Order now, we'll deliver</h2>
+
+    <div>
+      <h4>Delivery</h4> Zip Code 98102
+      
+      <input id="zip-input" type="text" ></input>
+
+ <div>
+<h4>Size</h4> 12" ($12), 15" ($15), 18" ($18)
+<br>
+<input id="size-input" type="range" value="15" min="12" max="18" step="3"></input>
+</div>
+    
+    </div>
+
+    <select id="crust-input">
+      <option>Regular</option>
+      <option>Thin</option>
+
+    </select>
+
+    <div>
+<div>
+<h4>Sauce</h4>
+<input type="radio" name="sauce" value="Red" checked>Red</input>
+<input type="radio" name="sauce" value="White">White</input>
+<input type="radio" name="sauce" value="No">No sauce</input>
+</div>
+<div>
+<h4>Toppings</h4> Choose up to 3 toppings (+$1.50 each) <br>
+<input type="checkbox" name="topping" value="Pepperoni">Pepperoni</input>
+<br><input type="checkbox" name="topping" value="Mushrooms">Mushrooms</input>
+<br><input type="checkbox" name="topping" value="Olives">Olives</input>
+<br><input type="checkbox" name="topping" value="Anchovies">Anchovies</input>
+</div>
+
+<h4>Extras</h4>
+<input id="extra-cheese-input" type="checkbox" value="Extra cheese">Extra cheese
+(+$1.00)</input>
+<input id="extra-sauce-input" type="checkbox" value="Extra sauce">Extra sauce
+(free)</input>
+</div>
+    
+<div>
+<h4>Ready?</h4>
+<button onclick="handleOrderClick()">Place order!</button>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
